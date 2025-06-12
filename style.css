@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 60px; /* For sticky header */
+}
+
+/* Sticky Banner */
+.sticky-banner {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #333;
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  z-index: 1001;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  padding: 60px 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 18px;
+  color: #555;
+}
